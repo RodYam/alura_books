@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: relative; /* position relative, que permite aplicar propriedades como top, bottom, left e righ */
 }
 
 .cabecalho__menu-hamburguer {
@@ -24,9 +24,13 @@
     padding: 1em;
 }
 
+.container__botao {
+    display: none;
+}
+
 .lista-menu {
     display: none;
-    position: absolute;
+    position: absolute; /* absolute posiciona o elemento de acordo com outro que esteja em posição diferente de static (nesse caso, o elemento do menu). */
     top: 100%;
     width: 60vw;
 }
@@ -42,6 +46,7 @@
 
 .lista-menu__titulo {
     color: var(--laranja);
+    font-weight: 700;
 }
 
 .lista-menu__link {
